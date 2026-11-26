@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoneyMate</string>
+    <string name="app_tagline">Smart Personal Finance &amp; Budget Tracker</string>
+
+    <!-- Navigation -->
+    <string name="navigation_dashboard">Home</string>
+    <string name="navigation_transactions">History</string>
+    <string name="navigation_analytics">Analytics</string>
+    <string name="navigation_budget">Budgets</string>
+    <string name="navigation_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="current_balance">Net Balance</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="monthly_budget">Monthly Budget</string>
+    <string name="expenses_by_category">Expenses by Category</string>
+
+    <!-- Budget -->
+    <string name="set_monthly_budget">Set Monthly Budget</string>
+    <string name="save_budget">Save Budget</string>
+    <string name="budget_progress">Budget Progress</string>
+    <string name="remaining">Remaining</string>
+    <string name="category_budgets">Category Budgets</string>
+
+    <!-- Settings -->
+    <string name="currency_settings">Currency Settings</string>
+    <string name="currency_code_hint">Currency Code (e.g., USD)</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="budget_alerts">Budget Alerts</string>
+    <string name="daily_reminders">Daily Expense Reminders</string>
+    <string name="data_management">Data Management</string>
+    <string name="export_data">Backup Data (JSON)</string>
+    <string name="import_data">Restore Backup (JSON)</string>
+    <string name="export_csv">Export Transactions (CSV)</string>
+    <string name="load_demo_data">Load Sample Demo Data</string>
+    <string name="clear_all_data">Clear All Financial Data</string>
+
+    <!-- Messages -->
+    <string name="data_exported">Data exported successfully</string>
+    <string name="data_export_failed">Failed to export data</string>
+    <string name="data_imported">Data imported successfully</string>
+    <string name="data_import_failed">Failed to import data</string>
+</resources>

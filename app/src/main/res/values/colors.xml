@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern FinTech Palette (Teal / Emerald / Slate) -->
+    <color name="primary">#FF0F766E</color>
+    <color name="primary_dark">#FF115E59</color>
+    <color name="primary_light">#FFCCFBF1</color>
+    <color name="accent">#FF0EA5E9</color>
+
+    <color name="black">#FF0F172A</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Aliases kept for layout compatibility -->
+    <color name="pink_primary">@color/primary</color>
+    <color name="pink_light">#FFF1F5F9</color>
+    <color name="pink_dark">@color/primary_dark</color>
+    <color name="light_purple_bg">#FFF4F7FA</color>
+
+    <!-- Surface & Background -->
+    <color name="bg_screen">#FFF4F7FA</color>
+    <color name="surface_card">#FFFFFFFF</color>
+    <color name="surface_subtle">#FFF1F5F9</color>
+    <color name="divider">#FFE2E8F0</color>
+    <color name="dark_background">#FF0F172A</color>
+    <color name="dark_surface">#FF1E293B</color>
+
+    <!-- Text & Grays -->
+    <color name="text_primary">#FF0F172A</color>
+    <color name="text_secondary">#FF64748B</color>
+    <color name="gray_light">#FF94A3B8</color>
+    <color name="gray_dark">#FF475569</color>
+
+    <!-- Semantic Colors -->
+    <color name="income_green">#FF16A34A</color>
+    <color name="income_bg">#FFDCFCE7</color>
+    <color name="expense_red">#FFDC2626</color>
+    <color name="expense_bg">#FFFEE2E2</color>
+    <color name="warning_amber">#FFD97706</color>
+    <color name="warning_bg">#FFFEF3C7</color>
+
+    <color name="error">@color/expense_red</color>
+    <color name="success">@color/income_green</color>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.moneymate.ui.dashboard.DashboardFragment"
+        android:label="MoneyMate"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_analyticsFragment"
+            app:destination="@id/analyticsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_budgetFragment"
+            app:destination="@id/budgetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.example.moneymate.ui.transactions.TransactionsFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transactions">
+        <action
+            android:id="@+id/action_transactionsFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment">
+            <argument
+                android:name="transactionId"
+                app:argType="long"
+                android:defaultValue="-1L" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.moneymate.ui.transactions.AddTransactionFragment"
+        android:label="Transaction"
+        tools:layout="@layout/fragment_add_transaction">
+        <argument
+            android:name="transactionId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="defaultType"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.example.moneymate.ui.analysis.CategoryAnalysisFragment"
+        android:label="Analytics &amp; Insights"
+        tools:layout="@layout/fragment_category_analysis" />
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.example.moneymate.ui.budget.BudgetFragment"
+        android:label="Budgets"
+        tools:layout="@layout/fragment_budget">
+        <action
+            android:id="@+id/action_budgetFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment">
+            <argument
+                android:name="budgetId"
+                app:argType="long"
+                android:defaultValue="-1L" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBudgetFragment"
+        android:name="com.example.moneymate.ui.budget.AddBudgetFragment"
+        android:label="Manage Budget"
+        tools:layout="@layout/fragment_add_budget">
+        <argument
+            android:name="budgetId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.moneymate.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
